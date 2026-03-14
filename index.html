@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda de Metales Interactiva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Contenedor responsivo */
+        .rueda-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Tamaño máximo en pantalla grande */
+            margin: auto;
+        }
+
+        /* Imagen de fondo */
+        .rueda-bg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Capa SVG que cubre exactamente la imagen */
+        .svg-interactiva {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Estilo de las piezas de metal */
+        .metal-path {
+            fill: rgba(255, 255, 255, 0); /* Invisible por defecto */
+            stroke: transparent;
+            stroke-width: 2;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Efecto al pasar el mouse */
+        .metal-path:hover {
+            fill: rgba(255, 255, 255, 0.2); /* Brillo suave */
+            stroke: #ffcc00; /* Borde dorado */
+        }
+
+        /* Estilo para la pieza seleccionada */
+        .metal-path.active {
+            fill: rgba(255, 204, 0, 0.3);
+            stroke: #ffcc00;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white p-4">
+
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-7">
+            <div class="rueda-wrapper">
+                <img src="imagen.png" class="rueda-bg" alt="Rueda de metales">
+
+                <svg viewBox="0 0 660 790" class="svg-interactiva" xmlns="http://www.w3.org/2000/svg">
+                    
+                    <path class="metal-path" 
+                          data-name="Metal1" 
+                          data-desc="prueba"
+                          d="M317.5 537.5V627C216.3 621.4 144 569 120.5 543.5L184 480.5C232 526.5 293 537.667 317.5 537.5Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal2" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M476.5 480.5L539.5 544C469.1 611.2 378.833 627.167 342.5 626.5V537C398.5 538.2 455.167 499.833 476.5 480.5Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal3" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M545 340.5H636.5C630.5 438.5 579.167 506.667 554.5 528.5L490.5 465.5C531.7 421.9 544 364 545 340.5Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal4" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M491.5 183.5L555.5 119.5C623.1 193.9 637.833 281.833 636.5 316H545.5C542.3 250 508.167 200 491.5 183.5Z" />
+                    
+                    <path class="metal-path" 
+                          data-name="Metal5" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M342 110.5V22C442 25.2 515.333 78.3333 539.5 104.5L476 168.5C436 125.3 370 111.833 342 110.5Z" />
+                    
+                    <path class="metal-path" 
+                          data-name="Metal6" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M183.5 167.5L121 105C186.2 39.8 279.167 22.5 317.5 22V111C255.5 111.4 202.667 148.833 183.5 167.5Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal7" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M292.5 340C244 339.833 145 339.6 137 340C139 389.2 169.5 433.167 184.5 449L292.5 340Z" />
+                    
+                    <path class="metal-path" 
+                          data-name="Metal8" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M316.5 346.5V514C263.7 512.8 216.833 480.5 200 464.5L316.5 346.5Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal9" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M367 340.5H521.5C518.3 389.3 488.833 432.833 474.5 448.5L367 340.5Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal10" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M359 315L475 199.5C512.6 239.9 521.667 293.333 521.5 315H359Z"/>
+
+                    <path class="metal-path" 
+                          data-name="Metal11" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M342 301.5V134C400.4 135.6 444.667 168.167 459.5 184.5L342 301.5Z"  />
+                    
+                    <path class="metal-path" 
+                          data-name="Metal12" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M317 134.5V303L200 184C243.2 142.4 296 133.667 317 134.5Z" />
+                    
+                    <path class="metal-path" 
+                          data-name="Metal13" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M342 346V514C402 510.4 445 478.833 459 463.5L342 346Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal14" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M168 466C147.5 486 106.9 527.2 106.5 528C42.5 464.8 25.1667 375.167 24.5 339H113.5C119.1 401.8 152 450 168 466Z" />
+                    
+                    <path class="metal-path" 
+                          data-name="Metal15" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M113.5 315H24.5C28.5 216.6 80.8333 143.667 106.5 120L168.5 183C125.7 228.2 113.833 290 113.5 315Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal16" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M100.5 690.36H9.5V781.5H100.5V690.36Z" />
+
+                    <path class="metal-path" 
+                          data-name="Metal17" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M648.5 690.357C644 690.357 559.54 690.382 556.5 690.382V781.5H648.5V690.357Z" />
+                    
+                    <path class="metal-path" 
+                          data-name="Metal18" 
+                          data-desc="Permite crear nubes de cobre para esconderse."
+                          d="M299.5 314.5L184.5 199.5C146.5 238.7 137 292.5 137 314.5H299.5Z" />
+
+                </svg>
+            </div>
+        </div>
+
+        <div class="col-md-5 mt-4 mt-md-0">
+            <div class="card bg-secondary text-white border-warning">
+                <div class="card-body text-center">
+                    <h3 id="metal-nombre">Selecciona un metal</h3>
+                    <hr class="border-warning">
+                    <p id="metal-descripcion">Haz clic en una de las secciones de la rueda para conocer sus propiedades.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const paths = document.querySelectorAll('.metal-path');
+    const displayNombre = document.getElementById('metal-nombre');
+    const displayDesc = document.getElementById('metal-descripcion');
+
+    paths.forEach(path => {
+        path.addEventListener('click', function() {
+            // Quitar clase activa de todos
+            paths.forEach(p => p.classList.remove('active'));
+            
+            // Añadir clase activa al seleccionado
+            this.classList.add('active');
+
+            // Actualizar textos
+            const nombre = this.getAttribute('data-name');
+            const descripcion = this.getAttribute('data-desc');
+            
+            displayNombre.innerText = nombre;
+            displayDesc.innerText = descripcion;
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
