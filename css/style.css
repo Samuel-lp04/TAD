@@ -1,37 +1,125 @@
-:root {
-    /* Nueva paleta de colores temáticos de Mistborn */
+:root{
     --bg-dark-void: #050811; /* Fondo muy oscuro, como la noche en Scadrial */
     --bg-panel: #111a2e;     /* Azul profundo para el contenedor */
     --text-main: #e0e6ed;    /* Gris claro para legibilidad en textos largos */
     --gold-metal: #C5A059;   /* Dorado cobrizo apagado */
     --copper-metal: #b87333; /* Color cobre */
-    --steel-blue: #5bc0be;   /* Bruma azulada */
+    --steel-blue: #5bc0be;
+    --roshar-stormlight: #3399ff;
+    --bg-body: #f8f9fa;
+    --nalthis: #F47FFF;
+    --cosmere-dark: #2C3E50;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Fundamental para que los paddings no rompan el grid */
+@font-face {
+    font-family: 'CinzelLocal'; /* Le damos un nombre interno */
+    src: url('fonts/Cinzel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declarar Cinzel Negrita (Bold) */
+@font-face {
+    font-family: 'CinzelLocal';
+    src: url('fonts/Cinzel-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.font-cinzel {
+    font-family: 'CinzelLocal';
+}
+
+.navbar-nav .nav-link:hover {
+    transition: all 0.4s ease;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    /* Un fondo suave para resaltar */
+    border-radius: 5px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1); /* Invierte los colores (de blanco a negro) */
+}
+
+button:focus,
+button:active,
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.bg-cosmere-dark {
+    background: var(--cosmere-dark);
+}
+
+.color-cosmere-dark {
+    color: var(--cosmere-dark)
 }
 
 body {
-    background-color: var(--bg-dark-void);
-    font-family: 'Lato', sans-serif;
+    background: var(--bg-body);
+}
+
+/* Hover específico para Scadrial (Azul metálico) */
+#link-scadrial:hover {
+    color: var(--gold-metal) !important;
+
+}
+
+/* Hover específico para Roshar (Rojo tormenta) */
+#link-roshar:hover {
+    color: var(--roshar-stormlight) !important;
+
+}
+
+/* Hover específico para Nalthis (Multicolor/Arcoíris) */
+#link-nalthis:hover {
+    color: var(--nalthis) !important;
+
+}
+
+.btn-scadrial-outline {
+    border: 2px solid var(--gold-metal);
+    color: var(--gold-metal);
+}
+
+.btn-roshar-outline {
+    border: 2px solid var(--roshar-stormlight);
+    color: var(--roshar-stormlight);
+}
+
+.btn-nalthis-outline {
+    /* 1. Definimos un borde sólido pero transparente */
+    border: 2px solid var(--nalthis);
+    color: var(--nalthis)
+}
+
+.btn-scadrial-outline:hover {
+    background: var(--gold-metal);
     color: var(--text-main);
-    line-height: 1.7; /* Mejor legibilidad */
 }
 
-.interior {
-    background-color: var(--bg-panel);
-    padding: 50px 40px;
-    min-height: 100vh;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); /* Sombra más elegante y realista */
-    border-left: 1px solid rgba(197, 160, 89, 0.1);
-    border-right: 1px solid rgba(197, 160, 89, 0.1);
+.btn-roshar-outline:hover {
+    background: var(--roshar-stormlight);
+    color: var(--text-main);
 }
 
-/* Tipografía de Encabezados */
-h1, h2, h3 {
+.btn-nalthis-outline:hover {
+    background: var(--nalthis);
+    color: var(--text-main);
+}
+
+.carousel-caption {
+    background: rgba(15, 15, 15, 0.5);
+}
+
+.card-body-planetas{
+    min-height: 160px;
+}
+
+.h1-scadrial, .h2-scadrial, .h3-scadrial {
     font-family: 'Cinzel', serif;
     color: var(--gold-metal);
     text-transform: uppercase;
@@ -43,22 +131,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    color: #a0aabf; /* Plata azulada para diferenciar de h1 y h2 */
-}
-
-/* Corrección de las líneas inferiores (Responsivo) */
-h1::after, h2::after {
+.h1-scadrial::after, .h2-scadrial::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -68,13 +141,6 @@ h1::after, h2::after {
     background: linear-gradient(90deg, transparent, var(--copper-metal), transparent); /* Efecto difuminado */
 }
 
-p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    text-align: justify;
-}
-
-/* Rueda de Metales */
 .rueda-wrapper {
     position: relative;
     max-width: 500px; /* Límite para que no sea gigante en PC */
