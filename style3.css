@@ -1,0 +1,84 @@
+:root{
+    --bg-dark-void: #050811; /* Fondo muy oscuro, como la noche en Scadrial */
+    --bg-panel: #111a2e;     /* Azul profundo para el contenedor */
+    --text-main: #e0e6ed;    /* Gris claro para legibilidad en textos largos */
+    --gold-metal: #C5A059;   /* Dorado cobrizo apagado */
+    --copper-metal: #b87333; /* Color cobre */
+    --steel-blue: #5bc0be;
+    --roshar-stormlight: #3399ff;
+    --bg-body: #f8f9fa;
+    --nalthis: #F47FFF;
+    --cosmere-dark: #2C3E50;
+}
+
+.navbar-nav .nav-link:hover {
+    transition: all 0.4s ease;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    /* Un fondo suave para resaltar */
+    border-radius: 5px;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.bg-cosmere-dark {
+    background: var(--cosmere-dark);
+}
+
+body {
+    background: var(--bg-body);
+}
+
+/* Hover específico para Scadrial (Azul metálico) */
+#link-scadrial:hover {
+    color: var(--gold-metal) !important;
+
+}
+
+/* Hover específico para Roshar (Rojo tormenta) */
+#link-roshar:hover {
+    color: var(--roshar-stormlight) !important;
+
+}
+
+/* Hover específico para Nalthis (Multicolor/Arcoíris) */
+#link-nalthis:hover {
+    color: var(--nalthis) !important;
+
+}
+
+.btn-scadrial-outline {
+    border: 2px solid var(--gold-metal);
+    color: var(--gold-metal);
+}
+
+.btn-roshar-outline {
+    border: 2px solid var(--roshar-stormlight);
+    color: var(--roshar-stormlight);
+}
+
+.btn-nalthis-outline {
+    /* 1. Definimos un borde sólido pero transparente */
+    border: 2px solid var(--nalthis);
+    color: var(--nalthis)
+}
+
+.btn-scadrial-outline:hover {
+    background: var(--gold-metal);
+    color: var(--text-main);
+}
+
+.btn-roshar-outline:hover {
+    background: var(--roshar-stormlight);
+    color: var(--text-main);
+}
+
+.btn-nalthis-outline:hover {
+    background: var(--nalthis);
+    color: var(--text-main);
+}
+
+.carousel-caption {
+    background: rgba(15, 15, 15, 0.5);
+}

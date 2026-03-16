@@ -1,0 +1,150 @@
+:root {
+    /* Nueva paleta de colores temáticos de Mistborn */
+    --bg-dark-void: #050811; /* Fondo muy oscuro, como la noche en Scadrial */
+    --bg-panel: #111a2e;     /* Azul profundo para el contenedor */
+    --text-main: #e0e6ed;    /* Gris claro para legibilidad en textos largos */
+    --gold-metal: #C5A059;   /* Dorado cobrizo apagado */
+    --copper-metal: #b87333; /* Color cobre */
+    --steel-blue: #5bc0be;   /* Bruma azulada */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental para que los paddings no rompan el grid */
+}
+
+body {
+    background-color: var(--bg-dark-void);
+    font-family: 'Lato', sans-serif;
+    color: var(--text-main);
+    line-height: 1.7; /* Mejor legibilidad */
+}
+
+.interior {
+    background-color: var(--bg-panel);
+    padding: 50px 40px;
+    min-height: 100vh;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); /* Sombra más elegante y realista */
+    border-left: 1px solid rgba(197, 160, 89, 0.1);
+    border-right: 1px solid rgba(197, 160, 89, 0.1);
+}
+
+/* Tipografía de Encabezados */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--gold-metal);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #a0aabf; /* Plata azulada para diferenciar de h1 y h2 */
+}
+
+/* Corrección de las líneas inferiores (Responsivo) */
+h1::after, h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%; /* Se adapta a la pantalla */
+    max-width: 300px; /* Pero no crece infinitamente */
+    height: 2px; /* Más fino, más elegante */
+    background: linear-gradient(90deg, transparent, var(--copper-metal), transparent); /* Efecto difuminado */
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Rueda de Metales */
+.rueda-wrapper {
+    position: relative;
+    max-width: 500px; /* Límite para que no sea gigante en PC */
+    width: 100%; /* Ajuste perfecto en móviles */
+    margin: auto;
+}
+
+.rueda-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 15px rgba(197, 160, 89, 0.15)); /* Ligero resplandor a la imagen */
+}
+
+.svg-interactiva {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Piezas interactivas del SVG */
+.metal-path {
+    fill: rgba(255, 255, 255, 0);
+    stroke: transparent;
+    stroke-width: 2;
+    cursor: pointer;
+    transition: all 0.4s ease; /* Transición más fluida */
+}
+
+.metal-path:hover {
+    fill: rgba(197, 160, 89, 0.2); /* Brillo con el nuevo color oro */
+    stroke: var(--gold-metal);
+}
+
+.metal-path.active {
+    fill: rgba(197, 160, 89, 0.4);
+    stroke: var(--gold-metal);
+    filter: drop-shadow(0px 0px 8px var(--gold-metal)); /* El metal activo brilla */
+}
+
+/* Tarjeta de Información Personalizada (Reemplaza a Bootstrap) */
+.info-metal-card {
+    background: rgba(10, 15, 30, 0.8);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px); /* Efecto cristal oscuro */
+    transition: all 0.3s ease;
+}
+
+.info-metal-card #metal-nombre {
+    color: var(--gold-metal);
+    font-size: 1.8rem;
+}
+
+.info-metal-card #metal-descripcion {
+    font-size: 1.15rem;
+    color: #e0e6ed;
+    font-style: italic; /* Un toque de "libro de registro" */
+    text-align: center;
+}
+
+.divisor-oro {
+    height: 1px;
+    width: 80%;
+    margin: 15px auto;
+    background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.5), transparent);
+}

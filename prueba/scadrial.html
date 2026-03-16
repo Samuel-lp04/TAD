@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Enciclopedia de la Investidura - Scadrial</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-cosmere-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand font-cinzel" href="#">Archivo Arcanum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Scadrial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Roshar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nalthis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="sistemas.html">Sistemas Planetarios</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Scadrial</li>
+            </ol>
+        </nav>
+
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-8">
+                <h1 class="font-cinzel text-scadrial-primary">Las Artes Metálicas</h1>
+                <p class="lead">Scadrial es el hogar de tres sistemas de Investidura distintos, todos basados en la interacción del alma humana con diferentes metales.</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <button class="btn btn-scadrial-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#glosarioOffcanvas">
+                    Abrir Glosario Rápido
+                </button>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs mb-4" id="artesMetalicasTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active font-cinzel text-dark" id="alomancia-tab" data-bs-toggle="tab" data-bs-target="#alomancia" type="button" role="tab">Alomancia</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link font-cinzel text-dark" id="feruquimia-tab" data-bs-toggle="tab" data-bs-target="#feruquimia" type="button" role="tab">Feruquimia</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link font-cinzel text-dark" id="hemalurgia-tab" data-bs-toggle="tab" data-bs-target="#hemalurgia" type="button" role="tab">Hemalurgia</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="artesMetalicasTabContent">
+            
+            <div class="tab-pane fade show active" id="alomancia" role="tabpanel">
+                <h2 class="font-cinzel mb-3">El Arte de Conservación</h2>
+                <p>La Alomancia es una manifestación de la <span class="fw-bold text-decoration-underline" data-bs-toggle="tooltip" data-bs-placement="top" title="Poder mágico fundamental del Cosmere creado por Adonalsium.">Investidura</span> donde el usuario ingiere e "quema" metales para obtener poderes temporales.</p> <div class="accordion shadow-sm" id="accordionMetales">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button font-cinzel" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFisicos">
+                                Metales Físicos
+                            </button>
+                        </h2>
+                        <div id="collapseFisicos" class="accordion-collapse collapse show" data-bs-parent="#accordionMetales">
+                            <div class="accordion-body table-responsive">
+                                <table class="table table-hover align-middle">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Metal</th>
+                                            <th>Tipo</th>
+                                            <th>Efecto Alomántico</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-bold">Hierro</td>
+                                            <td><span class="badge bg-primary">Tirar</span></td>
+                                            <td>Atrae fuentes de metal cercanas hacia el usuario.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">Acero</td>
+                                            <td><span class="badge bg-danger">Empujar</span></td>
+                                            <td>Empuja fuentes de metal alejándolas del usuario.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed font-cinzel" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInternos">
+                                Metales Internos (Físicos)
+                            </button>
+                        </h2>
+                        <div id="collapseInternos" class="accordion-collapse collapse" data-bs-parent="#accordionMetales">
+                            <div class="accordion-body">
+                                <p>El <strong>Estaño</strong> incrementa los sentidos, mientras que el <strong>Peltre</strong> aumenta las capacidades físicas brutas (fuerza, equilibrio, curación).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="feruquimia" role="tabpanel">
+                <h2 class="font-cinzel mb-3">El Arte del Equilibrio</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body bg-light rounded">
+                                <h5 class="card-title font-cinzel">Almacenamiento</h5>
+                                <p class="card-text">La Feruquimia no otorga poder de la nada. Requiere que el usuario (Terrisano) pase un tiempo disminuyendo un atributo propio para almacenarlo en una mente de metal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body bg-light rounded">
+                                <h5 class="card-title font-cinzel">Extracción</h5>
+                                <p class="card-text">Una vez almacenado, el feruquimista puede extraer ese atributo más tarde, siendo capaz de usar días de fuerza acumulada en unos pocos segundos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="hemalurgia" role="tabpanel">
+                <h2 class="font-cinzel mb-3 text-danger">El Arte de Ruina</h2>
+                <div class="alert alert-danger shadow-sm" role="alert">
+                    <h4 class="alert-heading"><i class="bi bi-exclamation-triangle-fill"></i> Advertencia Nivel de Amenaza Alto</h4>
+                    <p>La Hemalurgia es inherentemente destructiva. Involucra la mutilación o muerte de una persona para arrancar fragmentos de su alma (Investidura) e injertarlos en otra persona mediante clavos metálicos.</p>
+                    <hr>
+                    <p class="mb-0">El uso continuado de esta magia abre el alma del usuario a la influencia directa de la Esquirla conocida como <strong>Ruina</strong>.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="glosarioOffcanvas" aria-labelledby="glosarioOffcanvasLabel">
+        <div class="offcanvas-header bg-cosmere-dark text-white">
+            <h5 class="offcanvas-title font-cinzel" id="glosarioOffcanvasLabel">Glosario Scadriano</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Nacido de la Bruma:</strong> Alguien capaz de quemar todos los metales alománticos.</li>
+                <li class="list-group-item"><strong>Esfumador:</strong> Un brumoso que solo puede quemar Cobre para ocultar la alomancia.</li>
+                <li class="list-group-item"><strong>Inquisidor de Acero:</strong> Criaturas creadas mediante Hemalurgia masiva.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

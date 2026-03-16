@@ -1,0 +1,86 @@
+/* Variables de la paleta de colores de Scadrial */
+:root {
+    --scadrial-ash: #E0E0E0;
+    --scadrial-copper: #B87333;
+    --scadrial-dark: #2C3E50;
+    --scadrial-accent: #34495E;
+    --roshar-primary: #004080; /* Azul oscuro regio */
+    --roshar-dark: #00264d;
+    --roshar-stormlight: #3399ff; /* Azul brillante como la luz tormentosa */
+    --roshar-light: #e6f2ff;
+}
+
+/* Tipografías de Google (Requisito cumplido) */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+/* Clases de color personalizadas */
+.bg-cosmere-dark {
+    background-color: var(--scadrial-dark) !important;
+}
+
+.text-scadrial-primary {
+    color: var(--scadrial-copper);
+}
+
+.btn-scadrial-outline {
+    border-color: var(--scadrial-copper);
+    color: var(--scadrial-copper);
+    transition: all 0.3s ease;
+}
+
+.btn-scadrial-outline:hover {
+    background-color: var(--scadrial-copper);
+    color: white;
+}
+
+/* Gestalt: Similitud y Proximidad (mejorando las tarjetas y acordeones) */
+.card, .accordion-item {
+    border-radius: 8px;
+    border: 1px solid var(--scadrial-ash);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(184, 115, 51, 0.1); /* Tono cobre muy suave */
+    color: var(--scadrial-dark);
+}
+
+/* Accesibilidad WCAG: Mejorar el contraste de los enlaces */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tooltip personalizado para encajar con la temática */
+.tooltip-inner {
+    background-color: var(--scadrial-dark);
+    font-family: 'Lato', sans-serif;
+    border: 1px solid var(--scadrial-copper);
+}
+
+.text-roshar-primary { color: var(--roshar-primary); }
+.text-roshar-dark { color: var(--roshar-dark); }
+.bg-roshar-dark { background-color: var(--roshar-dark); }
+.bg-roshar-stormlight { background-color: var(--roshar-stormlight); }
+
+.border-roshar { border: 1px solid #b3d9ff; }
+
+.btn-roshar-outline {
+    border-color: var(--roshar-primary);
+    color: var(--roshar-primary);
+    transition: all 0.3s ease;
+}
+.btn-roshar-outline:hover {
+    background-color: var(--roshar-primary);
+    color: white;
+}
