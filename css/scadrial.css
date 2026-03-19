@@ -1,0 +1,108 @@
+.h1-scadrial, .h2-scadrial, .h3-scadrial {
+    font-family: 'Cinzel', serif;
+    color: var(--gold-metal);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.h1-scadrial::after, .h2-scadrial::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    max-width: 300px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--copper-metal), transparent);
+}
+
+.alomancia-interactiva {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.alomancia-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 15px rgba(197, 160, 89, 0.15));
+}
+
+.svg-interactiva {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.metal-path {
+    fill: rgba(255, 255, 255, 0);
+    stroke: transparent;
+    stroke-width: 2;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.metal-path:hover {
+    stroke: var(--gold-metal);
+}
+
+.metal-path.active {
+    stroke: var(--gold-metal);
+    filter: drop-shadow(0px 0px 8px var(--gold-metal));
+}
+
+.info-metal-card {
+    background: rgba(10, 15, 30, 0.8);
+    border: 1px solid rgb(197, 160, 89);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.info-metal-card #metal-alomancia-nombre, .info-metal-card #metal-feruquimia-nombre {
+    color: var(--gold-metal);
+    font-size: 1.8rem;
+}
+
+.info-metal-card #metal-alomancia-descripcion, .info-metal-card #metal-feruquimia-descripcion {
+    font-size: 1.15rem;
+    color: #e0e6ed;
+    font-style: italic;
+    text-align: center;
+}
+
+.divisor-oro {
+    height: 1px;
+    width: 80%;
+    margin: 15px auto;
+    background-image: linear-gradient(90deg, rgba(197, 160, 89, 0), rgba(197, 160, 89, 0.8), rgba(197, 160, 89, 0));
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+
+.feruquimia-interactiva {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.feruquimia-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 15px rgba(197, 160, 89, 0.15));
+}

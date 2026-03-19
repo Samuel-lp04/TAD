@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-cosmere-dark sticky-top" aria-label="Third navbar example">
+        <div class="container-fluid"> <a class="navbar-brand font-cinzel" href="index.html">Arcanum</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
+                aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbars">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item"> <a class="nav-link" href="scadrial.html" id="link-scadrial">Scadrial</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="roshar.html" id="link-roshar">Roshar</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="nalthis.html" id="link-nalthis">Nalthis</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="historia">
+            <h1 class="h1-roshar">Sistema Roshiano</h1>
+            <p>En el sistema Roshariano en Roshar, su planeta más importante (Ashyn y Braize), hace milenios se
+                establecieron
+                las esquirlas de Honor y Cultivación, posteriormente se estableciria tambien Odium, dando una
+                manifestacion de Investidura conocida como Potenciacion.
+            </p>
+        </div>
+        <div class="row-cols-2">
+            <div class="card">
+                <div class="card-header">Corredores del viento</div>
+                <div class="card-body">
+                    <p class="card-text">prueba</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item"><strong>Potencia 1:</strong> <button type="button"
+                                class="btn badge bg-primary border-0" data-bs-toggle="modal"
+                                data-bs-target="#modaAdhesion">
+                                Adhesión
+                            </button> (Presión y Vacío)</li>
+                        <li class="list-group-item"><strong>Potencia 2:</strong> <button type="button"
+                                class="btn badge bg-primary border-0" data-bs-toggle="modal"
+                                data-bs-target="#modalGravitacion">
+                                Grabitacion
+                            </button> (Gravedad)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal fade" id="modaAdhesion" tabindex="-1" aria-labelledby="modaAdhesionLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-roshar-dark text-white">
+                            <h5 class="modal-title font-cinzel" id="modaAdhesionLabel">Adhesion</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalGravitacion" tabindex="-1" aria-labelledby="modalGravitacionLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-roshar-dark text-white">
+                            <h5 class="modal-title font-cinzel" id="modalGravitacionLabel">Gravitacion</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+<footer class="bg-cosmere-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <p class="mb-0 small">El cosmere es propiedad de Brandon Sanderson</p>
+    </div>
+</footer>
+
+</html>

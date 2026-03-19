@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Site</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scadrial.css">
 </head>
 
 <body>
@@ -18,9 +19,9 @@
             </button>
             <div class="navbar-collapse collapse" id="navbars">
                 <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                    <li class="nav-item"> <a class="nav-link" href="#" id="link-scadrial">Scadrial</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="scadrial.html" id="link-scadrial">Scadrial</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#" id="link-roshar">Roshar</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" id="link-nalthis">Nalthis</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="nalthis.html" id="link-nalthis">Nalthis</a> </li>
                 </ul>
             </div>
         </div>
@@ -46,9 +47,9 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link font-cinzel text-dark" data-bs-toggle="tab" data-bs-target="#tab-ferruquimia"
-                    type="button" role="tab" aria-controls="tab-ferruquimia" aria-selected="false">
-                    Ferruquimia
+                <button class="nav-link font-cinzel text-dark" data-bs-toggle="tab" data-bs-target="#tab-feruquimia"
+                    type="button" role="tab" aria-controls="tab-feruquimia" aria-selected="false">
+                    Feruquimia
                 </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -61,101 +62,392 @@
 
         <div class="tab-content border border-top-0 bg-white shadow-sm" id="cosmereTabsContent">
 
-            <div class="tab-pane fade show active p-4" id="tab-alomancia" role="tabpanel" aria-labelledby="alomancia-tab">
+            <div class="tab-pane fade show active p-4" id="tab-alomancia" role="tabpanel"
+                aria-labelledby="alomancia-tab">
                 <h2>Alomancia</h2>
-                    <p>La Alomancia es una de las tres artes metálicas que permite quemar metales previamente ingeridos.
-                        Las personas con esta capacidad se conocen como alomantes. Existen dos tipos principales:
-                        brumosos (solo tienen la capacidad de quemar un metal) y nacidos de la bruma (tienen la
-                        capacidad
-                        de quemar todos los metales).</p>
-                    <p>Los metales que pueden ser quemados se dividen en dos grandes grupos: Metales Alománticos y
-                        Metales Divinos.</p>
+                <p>La Alomancia es una de las tres artes metálicas de fin-positivo basado en el poder de Conservacion,
+                    que se canaliza con la ingesta y posterior <em>quema</em> de metales.
+                    Las personas con esta capacidad se conocen como alomantes. Existen dos tipos principales:
+                    brumosos (solo tienen la capacidad de quemar un metal) y nacidos de la bruma (tienen la
+                    capacidad
+                    de quemar todos los metales).</p>
+                <p>Los metales que pueden ser quemados se dividen en dos grandes grupos: Metales Alománticos y
+                    Metales Divinos.</p>
 
-                    <h3 class="mt-5">Metales Alománticos</h3>
-                    <p>Existen 16 Metales Alománticos y los podemos dividir en 4 grupos:
-                        Físicos, de Mejora, Mentales y Temporales. Cada metal alomántico tiene asociada una pareja,
-                        compuesta
-                        por un metal puro y una aleación de este. El primero se clasifica con la habilidad de tirar y el
-                        segundo con la habilidad de empujar.
-                        Cada grupo está compuesto por dos parejas: una de metales externos (interactúan con cosas fuera
-                        del cuerpo) y otra de metales internos (interactúan directamente con el alomante).</p>
+                <h3 class="mt-5">Metales Alománticos</h3>
+                <p>Existen 16 Metales Alománticos y los podemos dividir en 4 grupos:
+                    Físicos, de Mejora, Mentales y Temporales. Cada metal alomántico tiene asociada una pareja,
+                    compuesta
+                    por un metal puro y una aleación de este. El primero se clasifica con la habilidad de tirar y el
+                    segundo con la habilidad de empujar.
+                    Cada grupo está compuesto por dos parejas: una de metales externos (interactúan con cosas fuera
+                    del cuerpo) y otra de metales internos (interactúan directamente con el alomante).</p>
 
-                    <div class="rueda-wrapper mt-4 mb-2">
-                        <img src="img/circulo-alomantico.png" class="rueda-bg" alt="Rueda de metales">
+                <div class="alomancia-interactiva mt-4 mb-2">
+                    <img src="img/circulo-alomantico.png" class="alomancia-img" alt="Metales alomanticos">
 
-                        <svg viewBox="0 0 500 492" class="svg-interactiva" xmlns="http://www.w3.org/2000/svg">
-                            <path class="metal-path" data-name="Duraluminio" data-alomante="Mosquito de duraluminio" data-desc="Metal de mejora de empujón interno. Mejora el siguiente metal quemado."
-                                d="M221.5 257C184.384 256.87 110.622 256.689 104.5 257C106.5 295 128.521 327.178 140 339.5L221.5 257Z" />
-                            <path class="metal-path" data-name="Aluminio" data-alomante="Mosquito de aluminio" data-desc="Metal de mejora de tirón interno. Elimina las reservas alomanticas internas."
-                                d="M240 262V389C199.21 388.09 164.504 363.131 151.5 351L240 262Z" />
-                            <path class="metal-path" data-name="Nicrosil" data-alomante="Nicroestallante" data-desc="Metal de mejora de empujón externo. Potencia el metal que queme el objetivo."
-                                d="M127.5 352.5C112.071 367.738 81.301 398.89 81 399.5C32.8328 351.348 20.5017 284.056 20 256.5H86.5C90.7146 304.348 115.458 340.31 127.5 352.5Z" />
-                            <path class="metal-path" data-name="Cromo" data-alomante="Sanguijuela" data-desc="Metal de mejora de tirón externo. Elimina las reservas alomanticas del objetivo."
-                                d="M240.5 406.5V473.5C163.5 470.5 110.5 429.5 92 411L139 363.5C175.305 398.039 221.97 406.625 240.5 406.5Z" />
+                    <svg viewBox="0 0 500 492" class="svg-interactiva" xmlns="http://www.w3.org/2000/svg">
+                        <path class="metal-path" data-name="Duraluminio" data-alomante="Mosquito de duraluminio"
+                            data-desc="Metal de mejora de empujón interno. Mejora el siguiente metal quemado."
+                            d="M221.5 257C184.384 256.87 110.622 256.689 104.5 257C106.5 295 128.521 327.178 140 339.5L221.5 257Z" />
+                        <path class="metal-path" data-name="Aluminio" data-alomante="Mosquito de aluminio"
+                            data-desc="Metal de mejora de tirón interno. Elimina las reservas alomanticas internas."
+                            d="M240 262V389C199.21 388.09 164.504 363.131 151.5 351L240 262Z" />
+                        <path class="metal-path" data-name="Nicrosil" data-alomante="Nicroestallante"
+                            data-desc="Metal de mejora de empujón externo. Potencia el metal que queme el objetivo."
+                            d="M127.5 352.5C112.071 367.738 81.301 398.89 81 399.5C32.8328 351.348 20.5017 284.056 20 256.5H86.5C90.7146 304.348 115.458 340.31 127.5 352.5Z" />
+                        <path class="metal-path" data-name="Cromo" data-alomante="Sanguijuela"
+                            data-desc="Metal de mejora de tirón externo. Elimina las reservas alomanticas del objetivo."
+                            d="M240.5 406.5V473.5C163.5 470.5 110.5 429.5 92 411L139 363.5C175.305 398.039 221.97 406.625 240.5 406.5Z" />
 
-                            <path class="metal-path" data-name="Acero" data-alomante="Lanzamonedas" data-desc="Metal físico de empujón externo. Empuja fuentes de metal cercanas."
-                                d="M86.5 238H19.5C22.5 163.822 61.25 109.341 80.5 91.5L128 138.5C94.5 172.5 86 220 86.5 238Z" />
-                            <path class="metal-path" data-name="Hierro" data-alomante="Atraedor" data-desc="Metal físico de tiron externo. Tira de metales cercanos."
-                                d="M139 127L92.5 80C142.271 30.2598 211.238 17.8814 240.5 17.5V84.5C193.172 84.8052 153.631 112.759 139 127Z" />
-                            <path class="metal-path" data-name="Peltre" data-alomante="Brazo de peltre (Violento)" data-desc="Metal físico de empujón interno. Amplia las habilidades físicas."
-                                d="M227 238L140 151.5C111.003 181.497 104.5 221.165 104.5 238H227Z" />
-                            <path class="metal-path" data-name="Estaño" data-alomante="Ojo de estaño" data-desc="Metal físico de tirón interno. Amplia los sentidos."
-                                d="M240.025 102.04V229L151 139.337C183.871 107.992 224.046 101.412 240.025 102.04Z" />
+                        <path class="metal-path" data-name="Acero" data-alomante="Lanzamonedas"
+                            data-desc="Metal físico de empujón externo. Empuja fuentes de metal cercanas."
+                            d="M86.5 238H19.5C22.5 163.822 61.25 109.341 80.5 91.5L128 138.5C94.5 172.5 86 220 86.5 238Z" />
+                        <path class="metal-path" data-name="Hierro" data-alomante="Atraedor"
+                            data-desc="Metal físico de tiron externo. Tira de metales cercanos."
+                            d="M139 127L92.5 80C142.271 30.2598 211.238 17.8814 240.5 17.5V84.5C193.172 84.8052 153.631 112.759 139 127Z" />
+                        <path class="metal-path" data-name="Peltre" data-alomante="Brazo de peltre (Violento)"
+                            data-desc="Metal físico de empujón interno. Amplia las habilidades físicas."
+                            d="M227 238L140 151.5C111.003 181.497 104.5 221.165 104.5 238H227Z" />
+                        <path class="metal-path" data-name="Estaño" data-alomante="Ojo de estaño"
+                            data-desc="Metal físico de tirón interno. Amplia los sentidos."
+                            d="M240.025 102.04V229L151 139.337C183.871 107.992 224.046 101.412 240.025 102.04Z" />
 
-                            <path class="metal-path" data-name="Cinc" data-alomante="Encendedor" data-desc="Metal mental de tirón externo. Enciende (enardece) las emociones."
-                                d="M259.5 84.5V17.5C336.462 19.9246 389.901 59.6741 408.5 79.5L360 127.5C329.215 94.7683 281.049 85.5102 259.5 84.5Z" />
-                            <path class="metal-path" data-name="Laton" data-alomante="Aplacador" data-desc="Metal mental de empujón externo. Aplaca (amortigua) las emociones."
-                                d="M372 139L420.5 91C471.754 147.415 482.511 213.092 481.5 239H413C410.574 188.954 384.637 151.511 372 139Z" />
-                            <path class="metal-path" data-name="Cobre" data-alomante="Nube de cobre (Ahumador)" data-desc="Metal mental de tirón interno. Esconde los pulsos alománticos."
-                                d="M259 228V102C305 104 336 128.5 348 140L259 228Z" />
-                            <path class="metal-path" data-name="Bronce" data-alomante="Buscador" data-desc="Metal mental de empujón interno. Permite escuchar los pulsos alománticos."
-                                d="M272.5 238.5L359 151.5C387.691 182.631 395.627 221.804 395.5 238.5H272.5Z" />
-                            
-                            <path class="metal-path" data-name="Oro" data-alomante="Augur" data-desc="Metal temporal de tirón interno. Revela tu yo del pasado."
-                                d="M258.5 262V388.5C304.654 385.757 336.731 362.183 347.5 350.5L258.5 262Z" />
-                            <path class="metal-path" data-name="Electrum" data-alomante="Oráculo" data-desc="Metal temporal de empujón interno. Revela el futuro propio."
-                                d="M278 257H394.5C392.056 294.504 370.447 327.46 359.5 339.5L278 257Z" />
-                            <path class="metal-path" data-name="Cadmio" data-alomante="Pulsador" data-desc="Metal temporal de tirón externo. Metal externo de tiron. Realentiza el tiempo."
-                                d="M360.5 363.5L409 411.5C355.039 462.123 286.849 474.002 259 473.5V406C301.924 406.904 344.148 378.064 360.5 363.5Z" />
-                            <path class="metal-path" data-name="Bendaleo" data-alomante="Deslizador" data-desc="Metal temporal de empujón externo. Acelera el tiempo."
-                                d="M412.5 257.5H481.5C474 342 436 380.5 420 400L372 351.745C403.323 318.349 411.74 275.5 412.5 257.5Z" />
-                        </svg>
+                        <path class="metal-path" data-name="Cinc" data-alomante="Encendedor"
+                            data-desc="Metal mental de tirón externo. Enciende (enardece) las emociones."
+                            d="M259.5 84.5V17.5C336.462 19.9246 389.901 59.6741 408.5 79.5L360 127.5C329.215 94.7683 281.049 85.5102 259.5 84.5Z" />
+                        <path class="metal-path" data-name="Laton" data-alomante="Aplacador"
+                            data-desc="Metal mental de empujón externo. Aplaca (amortigua) las emociones."
+                            d="M372 139L420.5 91C471.754 147.415 482.511 213.092 481.5 239H413C410.574 188.954 384.637 151.511 372 139Z" />
+                        <path class="metal-path" data-name="Cobre" data-alomante="Nube de cobre (Ahumador)"
+                            data-desc="Metal mental de tirón interno. Esconde los pulsos alománticos."
+                            d="M259 228V102C305 104 336 128.5 348 140L259 228Z" />
+                        <path class="metal-path" data-name="Bronce" data-alomante="Buscador"
+                            data-desc="Metal mental de empujón interno. Permite escuchar los pulsos alománticos."
+                            d="M272.5 238.5L359 151.5C387.691 182.631 395.627 221.804 395.5 238.5H272.5Z" />
+
+                        <path class="metal-path" data-name="Oro" data-alomante="Augur"
+                            data-desc="Metal temporal de tirón interno. Revela tu yo del pasado."
+                            d="M258.5 262V388.5C304.654 385.757 336.731 362.183 347.5 350.5L258.5 262Z" />
+                        <path class="metal-path" data-name="Electrum" data-alomante="Oráculo"
+                            data-desc="Metal temporal de empujón interno. Revela el futuro propio."
+                            d="M278 257H394.5C392.056 294.504 370.447 327.46 359.5 339.5L278 257Z" />
+                        <path class="metal-path" data-name="Cadmio" data-alomante="Pulsador"
+                            data-desc="Metal temporal de tirón externo. Metal externo de tiron. Realentiza el tiempo."
+                            d="M360.5 363.5L409 411.5C355.039 462.123 286.849 474.002 259 473.5V406C301.924 406.904 344.148 378.064 360.5 363.5Z" />
+                        <path class="metal-path" data-name="Bendaleo" data-alomante="Deslizador"
+                            data-desc="Metal temporal de empujón externo. Acelera el tiempo."
+                            d="M412.5 257.5H481.5C474 342 436 380.5 420 400L372 351.745C403.323 318.349 411.74 275.5 412.5 257.5Z" />
+                    </svg>
+                </div>
+
+                <div class="info-metal-card">
+                    <div class="card-body text-center">
+                        <h3 id="metal-alomancia-nombre" class="mt-0">Descubre la Alomancia</h3>
+                        <p id="alomante" class="text-secondary small"></p>
+                        <div class="divisor-oro">
+                        </div>
+                        <p id="metal-alomancia-descripcion" class="mb-0">Toca una de las secciones de la rueda de
+                            metales para
+                            revelar sus secretos y propiedades.</p>
                     </div>
+                </div>
 
-                    <div class="info-metal-card">
-                        <div class="card-body text-center">
-                            <h3 id="metal-nombre" class="mt-0">Descubre la Alomancia</h3>
-                            <p id="alomante" class="text-secondary small"></p>
-                            <div class="divisor-oro"></div>
-                            <p id="metal-descripcion" class="mb-0">Toca una de las secciones de la rueda de metales para
-                                revelar sus secretos y propiedades.</p>
+                <h3 class="mt-5">Metales Divinos</h3>
+                <p>Estos metales no encajan en las divisiones de los Metales Alománticos. No son compuestos
+                    metálicos normales, son la forma condensada y sólida de Investidura Pura. Cada una de las 16
+                    esquirlas (y sus fusiones, como es el caso de Armonía) tienen un metal divino. Solo se sabe el
+                    poder
+                    alomántico del Atium (metal de Ruina), del Lerasium (metal de Conservación) y de algunas de sus
+                    aleaciones.</p>
+                <ul>
+                    <li><strong>
+                            <p>Atium:
+                        </strong>Revela el futuro de los demás</p>
+                    </li>
+                    <li><strong>
+                            <p>Lerasium:
+                        </strong>Convierte a el que lo quema en un nacido de la bruma o aumenta su poder alomántico</p>
+                    </li>
+                    <li><strong>
+                            <p>Malatium:
+                        </strong>Permite ver el pasado de otras personas</p>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <div class="tab-pane fade show p-4" id="tab-feruquimia" role="tabpanel" aria-labelledby="feruquimia-tab">
+                <h2>Feruquimia</h2>
+                <p>La Feruquima es una de las tres artes metálicas de fin-neutro basado en el poder de Conservacion y
+                    Ruina.
+                    Permite al usuario convertir atributos en investiduras y almacenarlos en metales con los que tiene
+                    contacto directo y para
+                    posteriormente recuperar estos atributos del mismo metal por un proceso conocido como
+                    <em>Decantación</em>. Las personas
+                    que tienen esta habilidad son conocidas como <em>Feruquimistas</em>, existen dos tipos los que solo
+                    pueden almacenar y decantar un metal, <em>Ferrin</em>, y los que pueden usar todos los metales
+                    <em>Feruquimista completo</em>. Las piezas de metal que han sido usadas para almacenar un atributo
+                    se les llama <em>Mentes de metal</em>.
+                </p>
+                <p>Los metales que pueden ser quemados se dividen en dos grandes grupos: Metales Feruquimicos y
+                    Metales Divinos.</p>
+                <h3 class="mt-5">Metales Feruquimicos</h3>
+                <p>Existen 16 Metales Feruquimicos y los podemos dividir en 4 grupos:
+                    Físicos, Espirituales, Cognitivos e Híbridos. Cada metal feruquimico tiene asociada una pareja,
+                    compuesta
+                    por un metal puro y una aleación de este.</p>
+
+                <div class="feruquimia-interactiva mt-4 mb-2">
+                    <img src="img/Tabla-metales-feruquimicos.png" class="feruquimia-img" alt="Metales feruquimicos">
+
+                    <svg viewBox="0 0 500 499" class="svg-interactiva" xmlns="http://www.w3.org/2000/svg">
+                        <path class="metal-path" data-name="Duraluminio" data-feruquimista="Conector"
+                            data-desc="Acumula Conexión."
+                            d="M468.5 245H369V154.5L381 153L456.5 228.5C467 238.5 467.5 240.5 468.5 245Z" />
+                        <path class="metal-path" data-name="Aluminio" data-feruquimista="Auténtico"
+                            data-desc="Acumula Identidad."
+                            d="M31 254.5H129.5V345L120.5 346L42.5 270.5C33 260.5 31 256.5 31 254.5Z" />
+                        <path class="metal-path" data-name="Nicrosil" data-feruquimista="Portaalmas"
+                            data-desc="Acumula Investidura." d="M254.5 261V360H352.5L254.5 261Z" />
+                        <path class="metal-path" data-name="Cromo" data-feruquimista="Tejedor"
+                            data-desc="Acumula Fortuna." d="M245 261V360H147L245 261Z" />
+
+                        <path class="metal-path" data-name="Acero" data-feruquimista="Mensajero"
+                            data-desc="Acumula velocidad física." d="M245 238V138.8H146L245 238Z" />
+                        <path class="metal-path" data-name="Hierro" data-feruquimista="Ajustador"
+                            data-desc="Acumula peso físico." d="M254 238.5V139H353.5L254 238.5Z" />
+                        <path class="metal-path" data-name="Peltre" data-feruquimista="Bruto"
+                            data-desc="Acumula fuerza física."
+                            d="M245 30.5V130H154.5L153.5 118L229.5 42C239.5 31.5 240.5 32 245 30.5Z" />
+                        <path class="metal-path" data-name="Estaño" data-feruquimista="Susurravientos"
+                            data-desc="Acumula sentidos."
+                            d="M254.5 30.5V129.5H345L346 118L270 42C263 35 262 32.5 254.5 30.5Z" />
+
+                        <path class="metal-path" data-name="Cinc" data-feruquimista="Chispeante"
+                            data-desc="Acumula velocidad mental." d="M238 245.5H139.5V147L238 245.5Z" />
+                        <path class="metal-path" data-name="Laton" data-feruquimista="Alma de fuego"
+                            data-desc="Acumula calor." d="M360 146.5V245.5H261L360 146.5Z" />
+                        <path class="metal-path" data-name="Cobre" data-feruquimista="Archivero"
+                            data-desc="Acumula recuerdos."
+                            d="M469 254.5H369.5V344.5L379.5 346L458 269.5C465.5 262 468.667 257 469 254.5Z" />
+                        <path class="metal-path" data-name="Bronce" data-feruquimista="Centinela"
+                            data-desc="Acumula vigilia."
+                            d="M31 245H130V154L118.5 152.5L42.5 229C36 236 32 240.5 31 245Z" />
+
+                        <path class="metal-path" data-name="Oro" data-feruquimista="Hacedor de sangre"
+                            data-desc="Acumula salud."
+                            d="M245 469V369.5H155.5L153 379.5L229.5 458C235.9 466 242.5 468.667 245 469Z" />
+                        <path class="metal-path" data-name="Electrum" data-feruquimista="Pináculo"
+                            data-desc="Acumula determinación."
+                            d="M254.5 469V369.5H345L346.5 380L270.5 457.5C260.5 467.9 256.5 469 254.5 469Z" />
+                        <path class="metal-path" data-name="Cadmio" data-feruquimista="Susurrante"
+                            data-desc="Acumula aliento." d="M139.5 353V254.5H238.5L139.5 353Z" />
+                        <path class="metal-path" data-name="Bendaleo" data-feruquimista="Incluyente"
+                            data-desc="Acumula energía." d="M261.5 254.5H360V353L261.5 254.5Z" />
+                    </svg>
+
+                </div>
+                <div class="info-metal-card">
+                    <div class="card-body text-center">
+                        <h3 id="metal-feruquimia-nombre" class="mt-0">Descubre la Feruquimia</h3>
+                        <p id="feruquimista" class="text-secondary small"></p>
+                        <div class="divisor-oro"></div>
+                        <p id="metal-feruquimia-descripcion" class="mb-0">Toca una de las secciones del cuadrado de
+                            metales para
+                            revelar sus secretos y propiedades.</p>
+                    </div>
+                </div>
+                <h3 class="mt-5">Metales Divinos</h3>
+                <p>Estos metales no encajan en las divisiones de los Metales Alománticos. No son compuestos
+                    metálicos normales, son la forma condensada y sólida de Investidura Pura. Cada una de las 16
+                    esquirlas (y sus fusiones, como es el caso de Armonía) tienen un metal divino. Solo se sabe el
+                    poder
+                    Feruquimico del Atium (metal de Ruina)</p>
+                <ul>
+                    <li><strong>
+                            <p>Atium:
+                        </strong>Acumula juventud</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="tab-pane fade show p-4" id="tab-hemalurgia" role="tabpanel"
+                aria-labelledby="hemalurgia-tab">
+                <h2>Hemalurgia</h2>
+                <p>La Hemalurgia es una de las tres artes metálicas de fin-negativa basado en el poder de Ruina.
+                    Es la transferencia de de atributos como la Alomancia, la Feruquimia o la fuerza humana inata
+                    mediante la alteración de la Redespiritu.
+                </p>
+                <p>Para acceder a esta se introduce un clavo en un punto de anclaje para cargarlo Hemalurgicamente. El
+                    clavo contiene un fragemento robado de Redespiritu, este se arranca y se inserta en el receptor
+                    fijando la habilidad a su Redespiritu.</p>
+                <p>Este proceso provoca aperturas en la Redespiritu del recetor abriendo una puerta a Esquirlas, o
+                    <em>encendedores</em> y <em>aplacadores</em> poderosos, para poder susurrar o incluso controlar al
+                    receptor
+                </p>
+                <p>Los metales que pueden ser usados para la hemalurgia se dividen en dos grandes grupos: Metales
+                    Hemalúrgicos y
+                    Metales Divinos.</p>
+
+                <h3 class="mt-5">Metales Hemalúrgicos</h3>
+                <p>Existen 16 Metales Hemalúrgicos y los podemos dividir en 4 grupos:
+                    Físicos, Espirituales, Cognitivos y Temporales. Cada metal alomántico tiene asociada una pareja,
+                    compuesta
+                    por un metal puro y una aleación de este.</p>
+
+                <div class="accordion shadow-sm" id="acordeonHemalurgia">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFisico">
+                            <button class="accordion-button font-cinzel text-dark fw-bold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFisico" aria-expanded="true"
+                                aria-controls="collapseFisico">
+                                Metales Físicos
+                            </button>
+                        </h2>
+                        <div id="collapseFisico" class="accordion-collapse collapse" aria-labelledby="headingFisico"
+                            data-bs-parent="#acordeonHemalurgia">
+                            <div class="accordion-body p-0">
+                                <div class="table-responsive m-0">
+                                    <table class="table table-bordered table-striped mb-0 text-center align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Hierro:</strong> Roba fuerza</td>
+                                                <td><strong>Acero:</strong> Roba poderes alománticos físicos</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Estaño:</strong> Roba sentidos</td>
+                                                <td><strong>Peltre:</strong> Roba poderes físicos feruquímicos</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <h3 class="mt-5">Metales Divinos</h3>
-                    <p>Estos metales no encajan en las divisiones de los Metales Alománticos. No son compuestos
-                        metálicos normales, son la forma condensada y sólida de Investidura Pura. Cada una de las 16
-                        esquirlas (y sus fusiones, como es el caso de Armonía) tienen un metal divino. Solo se sabe el
-                        poder
-                        alomántico del Atium (metal de Ruina), del Lerasium (metal de Conservación) y de algunas de sus
-                        aleaciones.</p>
-                    <p>Atium:</p>
-                    <p>Lerasium:</p>
-                    <p>Malatium:</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingCognitivo">
+                            <button class="accordion-button font-cinzel text-dark fw-bold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseCognitivo" aria-expanded="true"
+                                aria-controls="collapseFisico">
+                                Metales Cognitivos
+                            </button>
+                        </h2>
+                        <div id="collapseCognitivo" class="accordion-collapse collapse"
+                            aria-labelledby="headingCognitivo" data-bs-parent="#acordeonHemalurgia">
+                            <div class="accordion-body p-0">
+                                <div class="table-responsive m-0">
+                                    <table class="table table-bordered table-striped mb-0 text-center align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Cinc:</strong> Roba fortaleza emocional</td>
+                                                <td><strong>Latón:</strong> Roba poderes feruquimicos cognitivos</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Cobre:</strong> Roba fortaleza mental, memoria e
+                                                    inteligencia</td>
+                                                <td><strong>Bronce:</strong> Roba poderes mentales alománticos</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEspiritual">
+                            <button class="accordion-button font-cinzel text-dark fw-bold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseEspiritual" aria-expanded="true"
+                                aria-controls="collapseFisico">
+                                Metales Espirituales
+                            </button>
+                        </h2>
+                        <div id="collapseEspiritual" class="accordion-collapse collapse"
+                            aria-labelledby="headingEspiritual" data-bs-parent="#acordeonHemalurgia">
+                            <div class="accordion-body p-0">
+                                <div class="table-responsive m-0">
+                                    <table class="table table-bordered table-striped mb-0 text-center align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Cromo:</strong> Podría robar destino</td>
+                                                <td><strong>Nicrosil:</strong> Roba Investidura</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Aluminio:</strong> Elimina todos los poderes</td>
+                                                <td><strong>Duraluminio:</strong> Roba Conexión/Identidad</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTemporal">
+                            <button class="accordion-button font-cinzel text-dark fw-bold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTemporal" aria-expanded="true"
+                                aria-controls="collapseFisico">
+                                Metales Temporales
+                            </button>
+                        </h2>
+                        <div id="collapseTemporal" class="accordion-collapse collapse" aria-labelledby="headingTemporal"
+                            data-bs-parent="#acordeonHemalurgia">
+                            <div class="accordion-body p-0">
+                                <div class="table-responsive m-0">
+                                    <table class="table table-bordered table-striped mb-0 text-center align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Cadmio:</strong> Roba poderes temporales alománticos</td>
+                                                <td><strong>Bendaleo:</strong> Roba poderes espirituales feruquímicos
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Oro:</strong> Roba poderes feruquímicos híbridos</td>
+                                                <td><strong>Electrum:</strong> Roba poderes alománticos de mejora</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-            </div>
-            </div>
 
-            <div class="tab-pane fade p-4" id="tab-esquirlas" role="tabpanel" aria-labelledby="esquirlas-tab">
-                <h4 class="font-cinzel">Las Esquirlas de Adonalsium</h4>
-                <p>Aquí hablas de Ruina, Conservación, Honor, Cultivación, Odium...</p>
-            </div>
 
+                <h3 class="mt-5">Metales Divinos</h3>
+                <p>Estos metales no encajan en las divisiones de los Metales Hemalúrgicos. No son compuestos
+                    metálicos normales, son la forma condensada y sólida de Investidura Pura. Cada una de las 16
+                    esquirlas (y sus fusiones, como es el caso de Armonía) tienen un metal divino. Solo se sabe el
+                    poder
+                    alomántico del Atium (metal de Ruina) y del Lerasium (metal de Conservación)</p>
+                <ul>
+                    <li><strong>
+                            <p>Atium:
+                        </strong>Revela el futuro de los demás</p>
+                    </li>
+                    <li><strong>
+                            <p>Lerasium:
+                        </strong>Convierte a el que lo quema en un nacido de la bruma o aumenta su poder alomántico</p>
+                    </li>
+                </ul>
+
+
+
+            </div>
         </div>
     </div>
-<script src="js/scadrial.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scadrial.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-
+<footer class="bg-cosmere-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <p class="mb-0 small">El cosmere es propiedad de Brandon Sanderson</p>
+    </div>
+</footer>
 </html>

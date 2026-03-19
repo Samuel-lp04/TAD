@@ -1,0 +1,47 @@
+.h1-nalthis, .h2-nalthis, .h3-nalthis {
+    font-family: 'Cinzel', serif;
+    color: var(--hx-nalthis);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.h1-nalthis::after, .h2-nalthis::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    max-width: 300px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--sub-nalthis), transparent);
+}
+
+.alientos-cont {
+    background: rgba(10, 15, 30, 0.8);
+    border: 1px solid var(--sub-nalthis);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+.alientos {
+    color: var(--hx-nalthis);
+}
+
+#contenedorBarra {
+    height: 35px; 
+    background-color: #110020;
+    cursor: pointer;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#barra {
+    width: 0%; 
+    pointer-events: none; 
+    transition: width 0.8s ease-in-out;
+    background-color: var(--sub-nalthis);
+    color: #eae8eb
+}

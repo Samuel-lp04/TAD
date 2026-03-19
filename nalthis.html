@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nalthis.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-cosmere-dark sticky-top" aria-label="Third navbar example">
+        <div class="container-fluid"> <a class="navbar-brand font-cinzel" href="index.html">Arcanum</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
+                aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbars">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item"> <a class="nav-link" href="scadrial.html" id="link-scadrial">Scadrial</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" id="link-roshar">Roshar</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="nalthis.html" id="link-nalthis">Nalthis</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="historia">
+            <h1 class="h1-nalthis">Sistema Nalthiano</h1>
+            <p>En el sistema Nalthiano en Nalthis, su planeta más importante, hace milenios se establecio
+                la esquirla de Dominacion, dando una manifestacion de Investidura conocida como Alientos biocromáticos</p>
+            <p>Todo Nalthiano al nacer, nace con un aliento biocromatico, aunque puede decider transeferirselo a otra
+                persona (una persona sin aliento se le conoce como <em>Apagado</em>). Estos alientos son la
+                fuente para poder <em>Despertar</em> y <em>Retornar</em>.
+            </p>
+            <p>El mandato para dar tu aliento biocromático a otra persona es <em>Mi vida a la tuya. Mi aliento es tuyo</em>.</p>
+        </div>
+        <div>
+            <p>La cantidad de alientos establece niveles de poder conocidos como Elevaciones.</p>
+            <div class="alientos-cont p-4 rounded mt-4">
+                <h4 class="alientos font-cinzel text-center mb-3">Cantidad de alientos</h4>
+
+                <div id="contenedorBarra" class="progress user-select-none">
+
+                    <div id="barra" class="progress-bar fw-bold fs-5 user-select-none" role="progressbar">
+                    </div>
+
+                </div>
+                <p id="poder" class="text-center text-light mt-2 small opacity-75">Haz clic o arrastra para cambiar tu
+                    cantidad de alientos.
+                </p>
+            </div>
+
+
+        </div>
+        <h2 class="pt-4">Despertar</h2>
+        <p>Despertar es el arte de combinar color (extraido de una fuente de color con la que tienes contacto físico) y
+            aliento con un mandato para despertar un objeto y animarlo</p>
+        <ul>
+            <li><strong>
+                    <p>Entidad tipo 1:
+                </strong>Son manifestaciones biocromaticas espontaneas en un afitrion difunto, conocidos como <em>Retornados</em>.</p>
+            </li>
+            <li><strong>
+                    <p>Entidad tipo 2:
+                </strong>Son manifestaciones sin mente en un anfitrión difunto, más conocidas como <em>sinvidas</em>, son restos animales reanimados que no tienen consciencia.</p>
+            </li>
+            <li><strong>
+                    <p>Entidad tipo 3:
+                </strong>Son manifestaciones biocromáticas en un huéspedes orgánicos no vivos.</p>
+            </li>
+            <li><strong>
+                    <p>Entidad tipo 4:
+                </strong>Son objetos con consciencia que se crean despertando materiales inorgánicos como metal o piedra. Eso requiere al menos la Novena Elevación.</p>
+            </li>
+        </ul>
+        <h2 class="pt-4">Retornados</h2>
+        <p>Los Retornados son personas, que tras de fallecer, la Esquirla Dotacion los elige deliberadamente para darles una vision del Reino Espiritual de un futuro posible en el Reino Fisico. Les ofrece la oportunidad de Retornar (revivir) y cambiar los acontecimientos.</p>
+        <p>Al Retornar se adquire un <em>Aliento Divino</em> que es una astilla de Dotacion. El <em>Aliento Divino</em> le permite al retornado alcanzar directamente la quinta Elevacion. El retornado necesita consumir un aliento a la semana, si no tuviera mas alientos que el divino consumiria este y moriria.</p>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/nalthis.js"></script>
+</body>
+<footer class="bg-cosmere-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <p class="mb-0 small">El cosmere es propiedad de Brandon Sanderson</p>
+    </div>
+</footer>
+</html>
