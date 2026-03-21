@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Site</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/roshar.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -31,60 +32,166 @@
             <p>En el sistema Roshariano en Roshar, su planeta más importante (Ashyn y Braize), hace milenios se
                 establecieron
                 las esquirlas de Honor y Cultivación, posteriormente se estableciria tambien Odium, dando una
-                manifestacion de Investidura conocida como Potenciacion.
+                manifestacion de Investidura conocida como Potenciacion. Este planeta se caracteriza por unas criaturas
+                llamadas spren que son partes de las esquirlas que habitan el planeta.ç
+                Viven en el Reino Cognitivo y son la representacion de naturaleza, emociones...
             </p>
+            <p>Estas pontencias son usadas por los <em>Caballeros Radiante</em>. Para ser un <em>Caballero Radiante</em>
+                primero hay que realizar un Vinculo de Nahel con spren que tengan sapienza conocidos como <em>Spren
+                    Verdaderos</em>. Una vez haya un vinculo para ser un Caballero Radiante hay que pronunciar unos
+                ideales.
+                Cada orden tiene sus ideales pero el primer ideal es el mismo para todas.
+            </p>
+            <p class="opacity-75 font-cinzel text-center">Vida antes que muerte, fuerza antes que debilidad, Viaje antes
+                que destino.</p>
         </div>
-        <div class="row-cols-2">
-            <div class="card">
-                <div class="card-header">Corredores del viento</div>
-                <div class="card-body">
-                    <p class="card-text">prueba</p>
-                    <ul class="list-group list-group-flush mb-3">
-                        <li class="list-group-item"><strong>Potencia 1:</strong> <button type="button"
-                                class="btn badge bg-primary border-0" data-bs-toggle="modal"
-                                data-bs-target="#modaAdhesion">
-                                Adhesión
-                            </button> (Presión y Vacío)</li>
-                        <li class="list-group-item"><strong>Potencia 2:</strong> <button type="button"
-                                class="btn badge bg-primary border-0" data-bs-toggle="modal"
-                                data-bs-target="#modalGravitacion">
-                                Grabitacion
-                            </button> (Gravedad)</li>
-                    </ul>
+        <div class="row">
+            <div class="col-6">
+                <div class="card h-100">
+                    <div class="card-header bg-roshar-dark text-white font-cinzel">Corredores del viento</div>
+                    <div class="card-body">
+                        <p class="card-text">Forman su vinculo de Nahel con los Honorspren. Suelen seguir la filosofia
+                            de proteccion, en concreto proteger a los inocentes y a los que no son capaces de protegerse
+                            por si solos.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Potencia 1:</strong> <button type="button"
+                                    class="btn badge bg-corredores-viento border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modaAdhesion">
+                                    Adhesión
+                                </button> (Union de objetos)</li>
+                            <li class="list-group-item"><strong>Potencia 2:</strong> <button type="button"
+                                    class="btn badge bg-corredores-viento border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalGravitacionCV">
+                                    Gravitacion
+                                </button> (Gravedad)</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="modal fade" id="modaAdhesion" tabindex="-1" aria-labelledby="modaAdhesionLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header bg-roshar-dark text-white">
-                            <h5 class="modal-title font-cinzel" id="modaAdhesionLabel">Adhesion</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
+                <div class="modal fade" id="modaAdhesion" tabindex="-1" aria-labelledby="modaAdhesionLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-roshar-dark text-white">
+                                <h5 class="modal-title font-cinzel " id="modaAdhesionLabel">Adhesion</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>La Potencia de Adhesión puede ser manipulada para unir cosas</p>
+                                <ul>
+                                    <li><strong>
+                                            <p>Enlace completo:
+                                        </strong>Crea temporalmente un vinculo muy fuerte entre dos objetos. El
+                                        potenciador
+                                        infunde una superficie con Luz Tormentosa, y cualquier persona o objeto que
+                                        entre en
+                                        contacto con esa superficie se pegara a ella</p>
+                                    </li>
+                                    <li><strong>
+                                            <p>Esculpir el viento:
+                                        </strong>Un corredor del viento puede usar la Potencia de Adhesion para esculpir
+                                        el
+                                        aire y manipular la presión</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="modal-body">
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalGravitacionCV" tabindex="-1" aria-labelledby="modalGravitacionCVLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-roshar-dark text-white">
+                                <h5 class="modal-title font-cinzel" id="modalGravitacionCVLabel">Gravitacion</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>La Potencia de Gravitacion puede ser manipulada para alterar la direccion y fuerza
+                                    gravitacional de un objeto.</p>
+                                <ul>
+                                    <li><strong>
+                                            <p>Enlace basico:
+                                        </strong>Altera el enlace gravitatorio espiritual de un objeto o persona al
+                                        planeta,
+                                        cambiando su direccion temporalmente.</p>
+                                    </li>
+                                    <li><strong>
+                                            <p>Enlace inverso:
+                                        </strong>Un corredor del viento combinando esta Potencia y la Potencia de
+                                        Adhesion,
+                                        creando una burbuja alrededor de un objeto imitando el enlace gravitatorio de la
+                                        tierra de abajo. En la practica esto hace que un objeto infundido atraiga otros
+                                        objetos hacia si.</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalGravitacion" tabindex="-1" aria-labelledby="modalGravitacionLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header bg-roshar-dark text-white">
-                            <h5 class="modal-title font-cinzel" id="modalGravitacionLabel">Gravitacion</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
+            <div class="col-6">
+                <div class="card h-100">
+                    <div class="card-header bg-roshar-dark text-white font-cinzel">Rompedores del cielo</div>
+                    <div class="card-body">
+                        <p class="card-text">Forman su vinculo de Nahel con los Altospren. Suelen seguir un codigo moral muy fuerte. Desean prevenir la anarquia y la tirania por igual.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Potencia 1:</strong> <button type="button"
+                                    class="btn badge bg-rompedores-cielo border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalGravitacionRC">
+                                    Gravitacion
+                                </button>  (Gravedad)</li>
+                            <li class="list-group-item"><strong>Potencia 2:</strong> <button type="button"
+                                    class="btn badge bg-rompedores-cielo border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalDivision">
+                                    Division
+                                </button> (Destruccion)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalGravitacionRC" tabindex="-1" aria-labelledby="modalGravitacionRCLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-roshar-dark text-white">
+                                <h5 class="modal-title font-cinzel" id="modalGravitacionRCLabel">Gravitacion</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>La Potencia de Gravitacion puede ser manipulada para alterar la direccion y fuerza
+                                    gravitacional de un objeto.</p>
+                                <ul>
+                                    <li><strong>
+                                            <p>Enlace basico:
+                                        </strong>Altera el enlace gravitatorio espiritual de un objeto o persona al
+                                        planeta,
+                                        cambiando su direccion temporalmente.</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="modal-body">
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalDivision" tabindex="-1" aria-labelledby="modalDivisionLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-roshar-dark text-white">
+                                <h5 class="modal-title font-cinzel " id="modalDivisionLabel">Division</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>La Potencia de División puede ser manipulada obtener poder sobre la destruccion y el deterioro</p>
+                                <ul>
+                                    <li><strong>
+                                            <p>Portar el polvo:
+                                        </strong>Los potenciadores pueden tocar un objeto y provocar que arda, se convierta en polvo o decaiga de otras formas.</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
