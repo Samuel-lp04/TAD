@@ -35,12 +35,12 @@ function animacion(valor, indice) {
         valorMostrado = valorFrame;
 
         if (fraccion < 1) {
-
+            barra.setAttribute('aria-valuenow', valorFrame);
             barra.innerText = valorFrame.toLocaleString();
             animacionFrame = requestAnimationFrame(pasoAnimacion);
         } else {
             valorMostrado = valorObjetivo;
-
+            barra.setAttribute('aria-valuenow', valorObjetivo);
             barra.innerText = valorObjetivo.toLocaleString();
             text.innerText = poder[indice].toLocaleString();
         }
