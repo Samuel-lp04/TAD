@@ -46,7 +46,7 @@
                 que destino.</p>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 mt-3">
                 <div class="card h-100">
                     <div class="card-header bg-roshar-dark text-white font-cinzel">Corredores del viento</div>
                     <div class="card-body">
@@ -131,17 +131,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 mt-3">
                 <div class="card h-100">
                     <div class="card-header bg-roshar-dark text-white font-cinzel">Rompedores del cielo</div>
                     <div class="card-body">
-                        <p class="card-text">Forman su vinculo de Nahel con los Altospren. Suelen seguir un codigo moral muy fuerte. Desean prevenir la anarquia y la tirania por igual.</p>
+                        <p class="card-text">Forman su vinculo de Nahel con los Altospren. Suelen seguir un codigo moral
+                            muy fuerte. Desean prevenir la anarquia y la tirania por igual.</p>
                         <ul class="list-group list-group-flush mb-3">
                             <li class="list-group-item"><strong>Potencia 1:</strong> <button type="button"
                                     class="btn badge bg-rompedores-cielo border-0" data-bs-toggle="modal"
                                     data-bs-target="#modalGravitacionRC">
                                     Gravitacion
-                                </button>  (Gravedad)</li>
+                                </button> (Gravedad)</li>
                             <li class="list-group-item"><strong>Potencia 2:</strong> <button type="button"
                                     class="btn badge bg-rompedores-cielo border-0" data-bs-toggle="modal"
                                     data-bs-target="#modalDivision">
@@ -184,11 +185,114 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p>La Potencia de División puede ser manipulada obtener poder sobre la destruccion y el deterioro</p>
+                                <p>La Potencia de División puede ser manipulada obtener poder sobre la destruccion y el
+                                    deterioro</p>
                                 <ul>
                                     <li><strong>
                                             <p>Portar el polvo:
-                                        </strong>Los potenciadores pueden tocar un objeto y provocar que arda, se convierta en polvo o decaiga de otras formas.</p>
+                                        </strong>Los potenciadores pueden tocar un objeto y provocar que arda, se
+                                        convierta en polvo o decaiga de otras formas.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 mt-3">
+                <div class="card h-100">
+                    <div class="card-header bg-roshar-dark text-white font-cinzel">Portador del polvo</div>
+                    <div class="card-body">
+                        <p class="card-text">Forman su vinculo de Nahel con los Cenizaspren. Suelen seguir la filosofia
+                            de que un gran poder requiere una voluntad fuerte para controlarlo, y sus juramentos están
+                            diseñados para enseñarles que deben controlar su poder destructivo.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Potencia 1:</strong> <button type="button"
+                                    class="btn badge bg-corredores-viento border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalDivision">
+                                    División
+                                </button> (Destrucción)</li>
+                            <li class="list-group-item"><strong>Potencia 2:</strong> <button type="button"
+                                    class="btn badge bg-corredores-viento border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalAbrasion">
+                                    Abrasión
+                                </button> (Rozamiento)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalAbrasion" tabindex="-1" aria-labelledby="modalAbrasionLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-roshar-dark text-white">
+                                <h5 class="modal-title font-cinzel" id="modalAbrasionLabel">Abrasión</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>La Potencia de Abrasión puede ser manipulada para alterar la fuerza de rozamiento
+                                    entre dos superficies.</p>
+                                <ul>
+                                    <li><strong>
+                                            <p>Deslizarse:
+                                        </strong>Esta habilidad permite al potenciador hacer que su cuerpo no tenga
+                                        fricción.</p>
+                                    </li>
+                                    <li><strong>
+                                            <p>Frenarse:
+                                        </strong>Esta habilidad permite al potenciador aumentar la fricción de su cuerpo
+                                        con una superficie.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mt-3">
+                <div class="card h-100">
+                    <div class="card-header bg-roshar-dark text-white font-cinzel">Danzantes del filo</div>
+                    <div class="card-body">
+                        <p class="card-text">Forman su vinculo de Nahel con los Cultivacispren. Suelen seguir una
+                            filosofia de recordar a las personas corrientes del mundo.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Potencia 1:</strong> <button type="button"
+                                    class="btn badge bg-rompedores-cielo border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalAbrasion">
+                                    Abrasión
+                                </button> (Rozamiento)</li>
+                            <li class="list-group-item"><strong>Potencia 2:</strong> <button type="button"
+                                    class="btn badge bg-rompedores-cielo border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalProgresion">
+                                    Progresión
+                                </button> (Crecimiento y curación)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalProgresion" tabindex="-1" aria-labelledby="modalProgresionLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-roshar-dark text-white">
+                                <h5 class="modal-title font-cinzel" id="modalProgresionLabel">Progresión</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>La Potencia de Progresión puede ser manipulada para alterar el crecimiento y curación
+                                    de organismos.</p>
+                                <ul>
+                                    <li><strong>
+                                            <p>Crecimiento:
+                                        </strong>Esta habilidad acelera el crecimiento orgánico a enormes velocidades.
+                                        </p>
+                                    </li>
+                                    <li><strong>
+                                            <p>Regeneración:
+                                        </strong>Esta habilidad cura daño en el cuerpo y alma de una persona instantáneamente y sin dejar cicatriz.
+                                        </p>
                                     </li>
                                 </ul>
                             </div>
